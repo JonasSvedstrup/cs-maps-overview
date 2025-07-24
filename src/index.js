@@ -117,4 +117,4 @@ new gridjs.Grid({
   search: true,
   fixedHeader: true,
   height: "500px",
-}).render(document.getElementById("wrapper"));
+}).render(document.getElementById("maps-overview"));

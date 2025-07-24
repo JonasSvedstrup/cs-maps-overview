@@ -22,3 +22,14 @@ https://www.youtube.com/playlist?list=PLW9ZbMsZn0d7Vn13rcNFljDtaGktLNQSR
 
 Bay of Rivers - OVERCHARGED EGG
 https://www.youtube.com/playlist?list=PLW9ZbMsZn0d6IuTPZkTaFdkykz2XXN26C
+
+Coastal Gem - CityZilla
+https://www.youtube.com/playlist?list=PLRNT0lBP5WIX2Ni6CBNaQVPh3daBqP5Si
+
+Coastal Flatland - Biffa
+Cities Skylines - Final City (Vanilla 2023)
+https://www.youtube.com/playlist?list=PLR5G_Kc9r-JDORqGVabBeOIWjlUhQgTzR
+
+Diamond Coast - Move The Mouse
+https://www.youtube.com/playlist?list=PLyDZG2zaBHLbSX0vhiMg2FnxyIBsPFa2b
+
