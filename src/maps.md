@@ -58,7 +58,7 @@
 | Map name         | DLC    | Buildable area | Theme     | Little Hamlet | Megalopolis | Highway | Railway | Ship | Air |
 | ---------------- | ------ | -------------- | --------- | ------------- | ----------- | ------- | ------- | ---- | --- |
 | Marin Bay        | Campus | 61%            | Temperate | 300           | 55.000      |         |         |      |     |
-| Murky Coast      | Campus |                |           |               |             |         |         |      |     |
+| Murky Coast      | Campus | 71%            | Boreal    | 460           | 70.000      |         |         |      |     |
 | Northwood Hills  | Campus |                |           |               |             |         |         |      |     |
 | Roslyn Peninsula | Campus | 56%            | Tropical  | 460           | 65.000      | x       | x       | x    | x   |
 | Wolf Creek       | Campus |                |           |               |             |         |         |      |     |

@@ -115,4 +115,6 @@ new gridjs.Grid({
   data: allMaps,
   sort: true,
   search: true,
+  fixedHeader: true,
+  height: "500px",
 }).render(document.getElementById("wrapper"));

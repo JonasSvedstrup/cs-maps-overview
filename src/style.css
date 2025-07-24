@@ -1,21 +1,46 @@
 * {
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 14px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  color: #202020;
+  font-family: "Optima", sans-serif;
+  font-size: 14px;
+}
+
+h1,
+h2 {
+  font-weight: 600;
 }
 
 h1 {
-    font-size: 1.4em;
+  font-size: 48px;
+  line-height: 58px;
 }
 
 h2 {
-    font-size: 1.2em;
+  font-size: 32px;
+  line-height: 38px;
+  margin-block-end: 16px;
+  margin-block-start: 0px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  line-height: 38px;
+
+  font-weight: 400;
 }
 
 img {
-    width: 100%;
+  width: 100%;
+}
+
+.gridjs-table th.gridjs-th,
+.gridjs-table td.gridjs-td {
+  padding: 4px;
+  min-width: 100px !important;
 }
