@@ -10,7 +10,7 @@ imgs.forEach((imgType) => {
 });
 
 const initMapDetails = () => {
-  fetch("../src/data/maps.json")
+  fetch("./src/data/maps.json")
     .then((response) => response.json())
     .then((json) => {
       const mapData = json.filter((map) => map.name === "Foggy Hills")[0];

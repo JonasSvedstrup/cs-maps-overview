@@ -1,5 +1,5 @@
 const initLetsPlayVideos = async () => {
-  const urlsToFetch = ["../src/data/lets-play.json", "../src/data/authors.json"];
+  const urlsToFetch = ["./src/data/lets-play.json", "./src/data/authors.json"];
   const fetchPromises = urlsToFetch.map((url) => fetch(url).then((response) => response.json()));
   Promise.all(fetchPromises)
     .then((responses) => {

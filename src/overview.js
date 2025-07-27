@@ -2,7 +2,7 @@ const headersPart = ["DLC", "Buildable area", "Theme", "Little Hamlet", "Megalop
 
 let maps = [];
 
-fetch("../src/data/maps.json")
+fetch("./src/data/maps.json")
   .then((response) => response.json())
   .then((json) => {
     maps = formatGridJsData(json);
