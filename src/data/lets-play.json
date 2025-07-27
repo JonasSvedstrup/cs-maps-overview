@@ -114,5 +114,27 @@
                 "playlistUrl": "https://www.youtube.com/playlist?list=PLyDZG2zaBHLbSX0vhiMg2FnxyIBsPFa2b"
             }
         ]
+    },
+    {
+        "name": "Black Woods",
+        "playlists": [
+            {
+                "author": "Grahtles",
+                "title": "Cities Skylines Series 1 Brindelton",
+                "videos": 20,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLndEK_o5u_i1qE1MxKny5iG-d-r9ZJj8d"
+            }
+        ]
+    },
+    {
+        "name": "Asanu Beach",
+        "playlists": [
+            {
+                "author": "RCB",
+                "title": "Asanu Beach Playlist",
+                "videos": 12,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLG7Bah9JsWKZaUg6TzEAXF3Ok6US627dS"
+            }
+        ]
     }
 ]

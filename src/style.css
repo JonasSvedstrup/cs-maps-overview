@@ -109,12 +109,24 @@ nav a {
 }
 
 nav a:link,
-nav a:visited {
+nav a:visited,
+li a:link,
+li a:visited {
   text-decoration: none;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+
+.tab .tablinks {
+  background-color: #1a2640;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab .tablinks.active {
+  background-color: #fff;
 }
 
 footer {
@@ -130,4 +142,31 @@ footer p {
 
 .warn * {
   color: yellow;
+}
+
+table {
+  text-align: left;
+}
+
+table th {
+  font-weight: 600;
+}
+
+table tr:hover {
+  background-color: #1a2640;
+}
+
+table th,
+table td {
+  padding: 4px;
+  color: #ffffff;
+}
+
+table a:link,
+table a:visited {
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
 }

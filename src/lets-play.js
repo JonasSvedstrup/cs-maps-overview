@@ -14,23 +14,24 @@ const initLetsPlayVideos = async () => {
       }
 
       if (videoList.length > 0) {
-        const listUl = document.createElement("ul");
-        const listEl = listUl;
+        const listTable = document.createElement("table");
+        const listTableTrHead = document.createElement("tr");
+        listTableTrHead.innerHTML = `<th>Map name</th><th>Playlist title</th><th>Author</th>`;
+
+        listTable.appendChild(listTableTrHead);
 
         videoList.forEach((playlists) => {
           playlists.playlists.forEach((playlist) => {
             const { playlistUrl, title, profile, author } = playlist;
-
             const filteredAuthor = authorData.filter((authorData) => authorData.name === author);
 
-            const listLi = document.createElement("li");
-            listLi.innerHTML = `${playlists.name} - <a href="${playlistUrl}">${title}</a> - by <a href="${filteredAuthor[0].profileLink}">${author}</a>`;
-
-            listEl.appendChild(listLi);
-
-            document.getElementById("lets-play").appendChild(listEl);
+            const listTableTrBody = document.createElement("tr");
+            listTableTrBody.innerHTML = `<td>${playlists.name}</td><td><a href="${playlistUrl}">${title}</a></td><td><a href="${filteredAuthor[0].profileLink}">${author}</a></td>`;
+            listTable.appendChild(listTableTrBody);
           });
         });
+
+        document.getElementById("lets-play").appendChild(listTable);
       }
     })
     .catch((error) => console.error("Error fetching data:", error));

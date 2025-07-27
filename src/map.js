@@ -13,7 +13,7 @@ const initMapDetails = () => {
   fetch("./src/data/maps.json")
     .then((response) => response.json())
     .then((json) => {
-      const mapData = json.filter((map) => map.name === "Foggy Hills")[0];
+      const mapData = json.filter((map) => map.name === formatMapName(selectedMap))[0];
       const { name, theme, dlc, connections, buildableArea, milestones } = mapData;
       const { highway, railway, ship, air } = connections;
 
@@ -42,3 +42,23 @@ const initMapDetails = () => {
       document.querySelector("#map-metadata").innerHTML = mapMetaData;
     });
 };
+
+function showScreenshot(evt, type) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(type).style.display = "block";
+
+  if (typeof evt !== "undefined") {
+    evt.currentTarget.className += " active";
+  }
+}
