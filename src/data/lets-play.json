@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Fisher Enclave",
+        "playlists": [
+            {
+                "author": "Captain_Ahvious",
+                "title": "Season 2 - Fisher Enclave",
+                "videos": 38,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVlIqMfqP5maAHb1lKdmtCOj"
+            }
+        ]
+    },
+    {
+        "name": "Coastal Flatlands",
+        "playlists": [
+            {
+                "author": "Captain_Ahvious",
+                "title": "Master Class - Coastal Flatlands",
+                "videos": 9,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVlFnM2WzmPMowk9ElfAdKgV"
+            },
+            {
+                "author": "Biffa Plays Indie Games",
+                "title": "Cities Skylines - Final City (Vanilla 2023)",
+                "videos": 19,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLR5G_Kc9r-JDORqGVabBeOIWjlUhQgTzR"
+            }
+        ]
+    },
+    {
+        "name": "Noyou Port",
+        "playlists": [
+            {
+                "author": "Captain_Ahvious",
+                "title": "Season 4 - Noyou Port City",
+                "videos": 18,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVkyCZNw4bANRWZm9pESuvRx"
+            }
+        ]
+    },
+    {
+        "name": "Swamplands",
+        "playlists": [
+            {
+                "author": "Captain_Ahvious",
+                "title": "Cities Skylines",
+                "videos": 15,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVmlhCM3tepykD7L28CRoXuc"
+            }
+        ]
+    },
+    {
+        "name": "Pearl Bay",
+        "playlists": [
+            {
+                "author": "City Planner Plays",
+                "title": "Verde Beach",
+                "videos": 141,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLXdi-Ns7w3jinCyFeq5KlZYhUBdR3tl8s"
+            }
+        ]
+    },
+    {
+        "name": "Two Rivers",
+        "playlists": [
+            {
+                "author": "City Planner Plays",
+                "title": "How to Start a City in Cities Skylines",
+                "videos": 6,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLXdi-Ns7w3jgkSQYQJvAQsTifif-gOg20"
+            }
+        ]
+    },
+    {
+        "name": "Murky Coast",
+        "playlists": [
+            {
+                "author": "OVERCHARGED EGG",
+                "title": "Palaven - Cities Skylines Vanilla",
+                "videos": 100,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLW9ZbMsZn0d7Vn13rcNFljDtaGktLNQSR"
+            }
+        ]
+    },
+    {
+        "name": "Bay of Rivers",
+        "playlists": [
+            {
+                "author": "OVERCHARGED EGG",
+                "title": "Orchid Bay | Cities Skylines Build Guide 2",
+                "videos": 119,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLW9ZbMsZn0d6IuTPZkTaFdkykz2XXN26C"
+            }
+        ]
+    },
+    {
+        "name": "Coastal Gem",
+        "playlists": [
+            {
+                "author": "CityZilla",
+                "title": "Cities Skylines Beginners Guide",
+                "videos": 19,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLRNT0lBP5WIX2Ni6CBNaQVPh3daBqP5Si"
+            }
+        ]
+    },
+    {
+        "name": "Diamond Coast",
+        "playlists": [
+            {
+                "author": "Move The Mouse",
+                "title": "Cities Skylines How To (Updated for 2025)",
+                "videos": 21,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLyDZG2zaBHLbSX0vhiMg2FnxyIBsPFa2b"
+            }
+        ]
+    }
+]

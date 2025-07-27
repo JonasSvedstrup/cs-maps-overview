@@ -1,0 +1,1301 @@
+[
+    {
+        "name": "Foggy Hills",
+        "dlc": "Vanilla",
+        "theme": "European",
+        "buildableArea": 74,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            400,
+            800,
+            1300,
+            2200,
+            4200,
+            6500,
+            8500,
+            14000,
+            17000,
+            28000,
+            36000,
+            55000,
+            65000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Grand River",
+        "dlc": "Vanilla",
+        "theme": "European",
+        "buildableArea": 84,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            360,
+            750,
+            1200,
+            2200,
+            4600,
+            7500,
+            10000,
+            17000,
+            22000,
+            36000,
+            48000,
+            70000,
+            90000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Green Plains",
+        "dlc": "Vanilla",
+        "theme": "Boreal",
+        "buildableArea": 74,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            500,
+            1000,
+            1500,
+            2600,
+            5500,
+            7500,
+            11000,
+            16000,
+            20000,
+            32000,
+            44000,
+            65000,
+            80000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Islands",
+        "dlc": "Vanilla",
+        "theme": "Temperate",
+        "buildableArea": 74,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            400,
+            800,
+            1200,
+            2200,
+            4200,
+            6500,
+            8500,
+            14000,
+            17000,
+            26000,
+            36000,
+            55000,
+            65000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Lagoon Shore",
+        "dlc": "Vanilla",
+        "theme": "Tropical",
+        "buildableArea": 56,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            460,
+            900,
+            1400,
+            2400,
+            4800,
+            7000,
+            10000,
+            16000,
+            19000,
+            30000,
+            42000,
+            60000,
+            75000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Riverrun",
+        "dlc": "Vanilla",
+        "theme": "Boreal",
+        "buildableArea": 74,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            460,
+            900,
+            1400,
+            2600,
+            5500,
+            8000,
+            11000,
+            18000,
+            22000,
+            36000,
+            48000,
+            70000,
+            90000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Sandy Beach",
+        "dlc": "Vanilla",
+        "theme": "Tropical",
+        "buildableArea": 63,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            500,
+            1000,
+            1500,
+            2600,
+            4800,
+            7000,
+            9500,
+            15000,
+            18000,
+            28000,
+            38000,
+            55000,
+            70000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Shady Strands",
+        "dlc": "Vanilla",
+        "theme": "Temperate",
+        "buildableArea": 57,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            440,
+            900,
+            1400,
+            2400,
+            4600,
+            7000,
+            9500,
+            15000,
+            19000,
+            30000,
+            40000,
+            60000,
+            75000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Two Rivers",
+        "dlc": "Vanilla",
+        "theme": "Temperate",
+        "buildableArea": 78,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
+        "milestones": [
+            420,
+            850,
+            1300,
+            2400,
+            4600,
+            7000,
+            9500,
+            16000,
+            20000,
+            32000,
+            44000,
+            65000,
+            80000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Black Woods",
+        "dlc": "Vanilla",
+        "theme": "Boreal",
+        "buildableArea": 69,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            320,
+            650,
+            1000,
+            1800,
+            3600,
+            5500,
+            7500,
+            12000,
+            15000,
+            24000,
+            34000,
+            48000,
+            60000
+        ],
+        "hasImages": true
+    },
+    {
+        "name": "Cliffside Bay",
+        "dlc": "Vanilla",
+        "theme": "European",
+        "buildableArea": 53,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            400,
+            800,
+            1300,
+            2200,
+            4200,
+            6500,
+            8500,
+            14000,
+            17000,
+            28000,
+            36000,
+            55000,
+            65000
+        ],
+        "hasImages": true
+    },
+    {
+        "name": "Diamond Coast",
+        "dlc": "Vanilla",
+        "theme": "Tropical",
+        "buildableArea": 69,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            500,
+            1000,
+            1600,
+            2600,
+            5000,
+            7500,
+            10000,
+            16000,
+            20000,
+            30000,
+            42000,
+            60000,
+            75000
+        ],
+        "hasImages": true
+    },
+    {
+        "name": "Frosty Rivers",
+        "dlc": "Snowfall",
+        "theme": "Winter",
+        "buildableArea": 56,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            380,
+            60000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Frozenshire",
+        "dlc": "Snowfall",
+        "theme": "Winter",
+        "buildableArea": 51,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            440,
+            850,
+            1300,
+            2400,
+            4400,
+            6500,
+            9000,
+            14000,
+            18000,
+            28000,
+            38000,
+            55000,
+            70000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Icy Islands",
+        "dlc": "Snowfall",
+        "theme": "Winter",
+        "buildableArea": 59,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            340,
+            650,
+            1100,
+            1800,
+            3600,
+            5500,
+            7500,
+            13000,
+            16000,
+            26000,
+            34000,
+            50000,
+            65000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Snowy Coasts",
+        "dlc": "Snowfall",
+        "theme": "Winter",
+        "buildableArea": 68,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            440,
+            850,
+            1300,
+            2400,
+            4400,
+            7000,
+            9000,
+            15000,
+            18000,
+            28000,
+            40000,
+            60000,
+            70000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Winter Hills",
+        "dlc": "Snowfall",
+        "theme": "Winter",
+        "buildableArea": 68,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            500,
+            1000,
+            1500,
+            2600,
+            5000,
+            7500,
+            10000,
+            16000,
+            20000,
+            32000,
+            44000,
+            65000,
+            80000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Prussian Peaks",
+        "dlc": "Natural Disasters",
+        "theme": "Boreal",
+        "buildableArea": 52,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            320,
+            60000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "The Archipelago",
+        "dlc": "Natural Disasters",
+        "theme": "Tropical",
+        "buildableArea": 21,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            120,
+            20000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "The Dust Bowl",
+        "dlc": "Natural Disasters",
+        "theme": "Temperate",
+        "buildableArea": 82,
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "milestones": [
+            440,
+            90000
+        ],
+        "hasImages": false
+    },
+    {
+        "name": "Arid Plains",
+        "dlc": "Mass Transit",
+        "buildableArea": 79,
+        "theme": "",
+        "milestones": [
+            500,
+            90000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Regal Hills",
+        "dlc": "Mass Transit",
+        "buildableArea": 72,
+        "theme": "",
+        "milestones": [
+            460,
+            80000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Seven Lakes",
+        "dlc": "Mass Transit",
+        "buildableArea": 81,
+        "theme": "",
+        "milestones": [
+            380,
+            75000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Eden Valley",
+        "dlc": "Green Cities",
+        "buildableArea": 79,
+        "theme": "",
+        "milestones": [
+            440,
+            85000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Garden Rivers",
+        "dlc": "Green Cities",
+        "buildableArea": 80,
+        "theme": "",
+        "milestones": [
+            480,
+            75000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Lavender Lake",
+        "dlc": "Green Cities",
+        "buildableArea": 75,
+        "theme": "",
+        "milestones": [
+            420,
+            90000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Cavern Coast",
+        "dlc": "Parklife",
+        "buildableArea": 61,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Honu Island",
+        "dlc": "Parklife",
+        "buildableArea": 45,
+        "theme": "Tropical",
+        "milestones": [
+            380,
+            36000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Mountain Meadows",
+        "dlc": "Parklife",
+        "buildableArea": 69,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Pine Rivers",
+        "dlc": "Parklife",
+        "buildableArea": 84,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Windfield",
+        "dlc": "Parklife",
+        "buildableArea": 65,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Green Peaks",
+        "dlc": "Industries",
+        "buildableArea": 54,
+        "theme": "European",
+        "milestones": [
+            460,
+            75000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Marble Canyon",
+        "dlc": "Industries",
+        "buildableArea": 69,
+        "theme": "Temperate",
+        "milestones": [
+            460,
+            75000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Pearl Bay",
+        "dlc": "Industries",
+        "buildableArea": 58,
+        "theme": "Tropical",
+        "milestones": [
+            340,
+            70000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Twin Fjords",
+        "dlc": "Industries",
+        "buildableArea": 69,
+        "theme": "Boreal",
+        "milestones": [
+            440,
+            70000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Woodgarden",
+        "dlc": "Industries",
+        "buildableArea": 62,
+        "theme": "Boreal",
+        "milestones": [
+            340,
+            60000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": " Murky Coast",
+        "dlc": "Campus",
+        "buildableArea": 71,
+        "theme": "Boreal",
+        "milestones": [
+            460,
+            70000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": " Northwood Hills",
+        "dlc": "Campus",
+        "buildableArea": 72,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": " Roslyn Peninsula",
+        "dlc": "Campus",
+        "buildableArea": 56,
+        "theme": "Tropical",
+        "milestones": [
+            460,
+            65000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": " Wolf Creek",
+        "dlc": "Campus",
+        "buildableArea": 60,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": " Marin Bay",
+        "dlc": "Campus",
+        "buildableArea": 61,
+        "theme": "Temperate",
+        "milestones": [
+            300,
+            55000
+        ],
+        "connections": {},
+        "hasImages": true
+    },
+    {
+        "name": "Azure Gulf",
+        "dlc": "Sunset Harbor",
+        "buildableArea": 65,
+        "theme": "Temperate",
+        "milestones": [
+            460,
+            75000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Crater Falls",
+        "dlc": "Sunset Harbor",
+        "buildableArea": 46,
+        "theme": "Boreal",
+        "milestones": [
+            420,
+            60000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Desert Oasis",
+        "dlc": "Sunset Harbor",
+        "buildableArea": 76,
+        "theme": "Tropical",
+        "milestones": [
+            500,
+            90000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Fisher Enclave",
+        "dlc": "Sunset Harbor",
+        "buildableArea": 45,
+        "theme": "European",
+        "milestones": [
+            300,
+            70000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Swamplands",
+        "dlc": "Sunset Harbor",
+        "buildableArea": 71,
+        "theme": "Boreal",
+        "milestones": [
+            380,
+            85000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Asanu Beach",
+        "dlc": "Airports",
+        "buildableArea": 75,
+        "theme": "Tropical",
+        "milestones": [
+            500,
+            90000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Hanami Bay",
+        "dlc": "Airports",
+        "buildableArea": 70,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Noyou Port",
+        "dlc": "Airports",
+        "buildableArea": 80,
+        "theme": "Boreal",
+        "milestones": [
+            480,
+            90000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Cape Apple",
+        "dlc": "Plazas and Promenades",
+        "buildableArea": 84,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Coastal Gem",
+        "dlc": "Plazas and Promenades",
+        "buildableArea": 57,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Gondola Islands",
+        "dlc": "Plazas and Promenades",
+        "buildableArea": 34,
+        "theme": "European",
+        "milestones": [
+            460,
+            50000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Oracle Lake",
+        "dlc": "Plazas and Promenades",
+        "buildableArea": 78,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Splitz Tributary",
+        "dlc": "Plazas and Promenades",
+        "buildableArea": 89,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Gray Waters",
+        "dlc": "Financial Districts",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Narrow Passage",
+        "dlc": "Financial Districts",
+        "buildableArea": 49,
+        "theme": "Temperate",
+        "milestones": [
+            360,
+            46000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "River Terrace",
+        "dlc": "Financial Districts",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Windblown Coast",
+        "dlc": "Financial Districts",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Wyvern Pass",
+        "dlc": "Financial Districts",
+        "buildableArea": 66,
+        "theme": "Tropical",
+        "milestones": [
+            380,
+            70000
+        ],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Coastal Flatland",
+        "dlc": "Hotels & Retreats",
+        "buildableArea": 57,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Emerald Cliffs",
+        "dlc": "Hotels & Retreats",
+        "buildableArea": 72,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Maze Valley",
+        "dlc": "Hotels & Retreats",
+        "buildableArea": 74,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Shifting Sands",
+        "dlc": "Hotels & Retreats",
+        "buildableArea": 72,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Weaving Waters",
+        "dlc": "Hotels & Retreats",
+        "buildableArea": 84,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Biomes Valley",
+        "dlc": "Map Pack 1",
+        "buildableArea": 73,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Desert Pass",
+        "dlc": "Map Pack 1",
+        "buildableArea": 89,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Farmland Flats",
+        "dlc": "Map Pack 1",
+        "buildableArea": 90,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Meandering River",
+        "dlc": "Map Pack 1",
+        "buildableArea": 83,
+        "theme": "Boreal",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Mountain Taper",
+        "dlc": "Map Pack 1",
+        "buildableArea": 78,
+        "theme": "Temperate",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "River Valley Plain",
+        "dlc": "Map Pack 1",
+        "buildableArea": 59,
+        "theme": "Boreal",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "The Eyeland",
+        "dlc": "Map Pack 1",
+        "buildableArea": 62,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": false,
+            "ship": true,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Tropical Pass",
+        "dlc": "Map Pack 1",
+        "buildableArea": 68,
+        "theme": "",
+        "milestones": [],
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
+        "hasImages": false
+    },
+    {
+        "name": "Bay of Rivers",
+        "dlc": "Map Pack 2",
+        "buildableArea": 48,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Desert Valley",
+        "dlc": "Map Pack 2",
+        "buildableArea": 89,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Fertile Desert",
+        "dlc": "Map Pack 2",
+        "buildableArea": 79,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Hilly Strait",
+        "dlc": "Map Pack 2",
+        "buildableArea": 26,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Land of the Isles",
+        "dlc": "Map Pack 2",
+        "buildableArea": 48,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Mountain Plain",
+        "dlc": "Map Pack 2",
+        "buildableArea": 70,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "River Delta",
+        "dlc": "Map Pack 2",
+        "buildableArea": 78,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "River Plains",
+        "dlc": "Map Pack 2",
+        "buildableArea": 81,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Table Mountains",
+        "dlc": "Map Pack 2",
+        "buildableArea": 77,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Winding River",
+        "dlc": "Map Pack 2",
+        "buildableArea": 46,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Caldera County",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Expedition Harbor",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Fondue Lake",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Karstlands",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Milestone Valley",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Nordheim",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Orca Sound",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Promise Island",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Redcliff Reservoir",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    },
+    {
+        "name": "Tranquility Cove",
+        "dlc": "Map Pack 3",
+        "buildableArea": 0,
+        "theme": "",
+        "milestones": [],
+        "connections": {},
+        "hasImages": false
+    }
+]

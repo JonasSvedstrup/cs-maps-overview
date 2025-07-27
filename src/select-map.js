@@ -1,8 +1,7 @@
 const select = document.createElement("select");
-
 select.setAttribute("onChange", "window.location = this.value");
 
-allMaps.forEach((map) => {
+maps.forEach((map) => {
   const option = document.createElement("option");
 
   option.value = formatHref(map[1]);
