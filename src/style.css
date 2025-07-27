@@ -33,11 +33,17 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-size: 40px;
   line-height: 44px;
   margin-block-start: 0px;
   margin-block-end: 16px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 20px;
 }
 
 p {
@@ -125,8 +131,16 @@ nav a:hover {
   padding: 10px;
 }
 
+.tab .tablinks:hover {
+  color: #fff;
+}
+
 .tab .tablinks.active {
   background-color: #fff;
+}
+
+.tab .tablinks.active:hover {
+  color: #000000;
 }
 
 footer {

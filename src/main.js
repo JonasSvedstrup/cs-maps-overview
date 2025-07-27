@@ -86,6 +86,8 @@ const init = (page) => {
     case Pages.Map:
       initMapDetails();
       initLetsPlayVideos();
+      initScreenshots();
+      initScreenshotNav();
       break;
     case Pages.LetsPlay:
       initLetsPlayVideos();

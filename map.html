@@ -33,60 +33,9 @@
       </section>
 
       <section>
-        <div class="tab">
-          <button class="tablinks active" onclick="showScreenshot(event, 'start')">Start</button>
-          <button class="tablinks" onclick="showScreenshot(event, 'top')">Top</button>
-          <button class="tablinks" onclick="showScreenshot(event, 'tiles')">Tiles</button>
-          <button class="tablinks" onclick="showScreenshot(event, 'height')">Height</button>
-          <button class="tablinks" onclick="showScreenshot(event, 'resources')">Resources</button>
-          <button class="tablinks" onclick="showScreenshot(event, 'wind')">Wind</button>
-          <button class="tablinks" onclick="showScreenshot(event, 'fish')">Fish</button>
-        </div>
+        <div id="screenshotNav" class="tab"></div>
       </section>
-      <section>
-        <div id="start" class="tabcontent">
-          <h3>Start</h3>
-          <a id="map-start-link">
-            <img id="map-start-img" />
-          </a>
-        </div>
-        <div id="top" class="tabcontent" style="display: none">
-          <h3>Top</h3>
-          <a id="map-top-link">
-            <img id="map-top-img" />
-          </a>
-        </div>
-        <div id="tiles" class="tabcontent" style="display: none">
-          <h3>Tiles</h3>
-          <a id="map-tiles-link">
-            <img id="map-tiles-img" />
-          </a>
-        </div>
-        <div id="height" class="tabcontent" style="display: none">
-          <h3>Height</h3>
-          <a id="map-height-link">
-            <img id="map-height-img" />
-          </a>
-        </div>
-        <div id="resources" class="tabcontent" style="display: none">
-          <h3>Resources</h3>
-          <a id="map-resources-link">
-            <img id="map-resources-img" />
-          </a>
-        </div>
-        <div id="wind" class="tabcontent" style="display: none">
-          <h3>Wind</h3>
-          <a id="map-wind-link">
-            <img id="map-wind-img" />
-          </a>
-        </div>
-        <div id="fish" class="tabcontent" style="display: none">
-          <h3>Fish</h3>
-          <a id="map-fish-link">
-            <img id="map-fish-img" />
-          </a>
-        </div>
-      </section>
+      <section id="screenshots"></section>
     </div>
     <footer id="footer"></footer>
 

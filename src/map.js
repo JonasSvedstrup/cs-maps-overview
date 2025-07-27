@@ -3,11 +3,15 @@ const selectedMap = getQueryString("map");
 document.querySelector("#selected-map").innerHTML = formatMapName(selectedMap);
 
 const imgs = ["tiles", "start", "top", "height", "resources", "wind", "fish"];
-
-imgs.forEach((imgType) => {
-  document.querySelector(`#map-${imgType}-img`).src = `maps/${selectedMap}/${selectedMap}-${imgType}.png`;
-  document.querySelector(`#map-${imgType}-link`).href = `maps/${selectedMap}/${selectedMap}-${imgType}.png`;
-});
+const imgsParagraphs = {
+  tiles: "Show an overview of all 25 tiles.",
+  start: "The start area, where the first tile is.",
+  top: "A far top down view of the entire map.",
+  height: "A height map that displays the height of the terrain.",
+  resources: "Using the natural resource overlay.",
+  wind: "The wind map.",
+  fish: "The fish map.",
+};
 
 const initMapDetails = () => {
   fetch("./src/data/maps.json")
@@ -41,6 +45,50 @@ const initMapDetails = () => {
 
       document.querySelector("#map-metadata").innerHTML = mapMetaData;
     });
+};
+
+const initScreenshotNav = () => {
+  const navElement = document.querySelector("#screenshotNav");
+
+  let htmlStr = "";
+  const navElements = ["start", "top", "tiles", "height", "resources", "wind", "fish"];
+
+  navElements.forEach((nav) => {
+    htmlStr += `
+      <button class="tablinks${nav === "start" ? " active" : ""}" onclick="showScreenshot(event, '${nav}')">${formatMapName(
+      nav
+    )}</button>
+    `;
+  });
+
+  navElement.innerHTML = htmlStr;
+};
+
+const initScreenshots = () => {
+  const screenshot = document.querySelector("#screenshots");
+
+  let htmlStr = "";
+
+  imgs.forEach((type) => {
+    let styleStr = type === "start" ? `` : `style="display: none"`;
+
+    htmlStr += `
+      <div id="${type}" class="tabcontent" ${styleStr}>
+        <h4>${formatMapName(type)}</h4>
+        <p>${imgsParagraphs[type]}</p>
+        <a id="map-${type}-link">
+          <img id="map-${type}-img" />
+        </a>
+      </div>
+    `;
+  });
+
+  screenshot.innerHTML = htmlStr;
+
+  imgs.forEach((imgType) => {
+    document.querySelector(`#map-${imgType}-img`).src = `maps/${selectedMap}/${selectedMap}-${imgType}.png`;
+    document.querySelector(`#map-${imgType}-link`).href = `maps/${selectedMap}/${selectedMap}-${imgType}.png`;
+  });
 };
 
 function showScreenshot(evt, type) {
