@@ -4,9 +4,21 @@
   border: 0;
   font: inherit;
   vertical-align: baseline;
-  color: #202020;
-  font-family: "Optima", sans-serif;
-  font-size: 14px;
+  color: #fff;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+section {
+  width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+section.full-width {
+  width: 96%;
 }
 
 h1,
@@ -19,20 +31,37 @@ h1 {
   line-height: 58px;
 }
 
-h2 {
-  font-size: 32px;
-  line-height: 38px;
-  margin-block-end: 16px;
+h2,
+h3 {
+  font-size: 40px;
+  line-height: 44px;
   margin-block-start: 0px;
+  margin-block-end: 16px;
 }
 
 p {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
-  line-height: 38px;
+  margin-block-start: 0px;
+  margin-block-end: 16px;
+}
 
+select {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 4px;
+  color: #ffffff;
+}
+
+p,
+a,
+a:visited {
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
+}
+
+li {
+  margin-left: 20px;
+  list-style: circle;
 }
 
 img {
@@ -43,4 +72,50 @@ img {
 .gridjs-table td.gridjs-td {
   padding: 4px;
   min-width: 100px !important;
+  white-space: nowrap;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  flex: 1 0 auto;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a2640;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  z-index: 100;
+}
+
+nav ul,
+nav li {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0px 20px;
+}
+
+nav a {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding-bottom: 100px;
+}
+
+.warn * {
+  color: yellow;
 }

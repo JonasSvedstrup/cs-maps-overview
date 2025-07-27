@@ -1,14 +1,10 @@
-function get(n) {
-  var half = location.search.split(n + "=")[1];
-  return half !== undefined ? decodeURIComponent(half.split("&")[0]) : null;
-}
+const selectedMap = getQueryString("map");
 
-const selectedMap = get("map");
+document.querySelector("#selected-map").innerHTML = formatMapName(selectedMap);
 
-document.querySelector("#selected-map").innerHTML = selectedMap;
-
-const imgs = ["tiles", "height", "resources", "fish"];
+const imgs = ["tiles", "start", "top", "height", "resources", "wind", "fish"];
 
 imgs.forEach((imgType) => {
-  document.querySelector(`#map-${imgType}`).src = `maps/${selectedMap}/${selectedMap}-${imgType}.png`;
+  document.querySelector(`#map-${imgType}-img`).src = `maps/${selectedMap}/${selectedMap}-${imgType}.png`;
+  document.querySelector(`#map-${imgType}-link`).href = `maps/${selectedMap}/${selectedMap}-${imgType}.png`;
 });
