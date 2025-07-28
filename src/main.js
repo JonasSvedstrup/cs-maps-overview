@@ -1,3 +1,5 @@
+let maps = [];
+
 const Pages = {
   Overview: `overview`,
   Map: `map`,
@@ -82,12 +84,14 @@ const initForAllPages = () => {
 const init = (page) => {
   switch (page) {
     case Pages.Overview:
+      initMapsOverviewTable();
       break;
     case Pages.Map:
       initMapDetails();
       initLetsPlayVideos();
       initScreenshots();
       initScreenshotNav();
+      initMapsOverviewTable();
       break;
     case Pages.LetsPlay:
       initLetsPlayVideos();
@@ -100,6 +104,34 @@ const formatNumer = (number) => {
 };
 
 const formatBooleanToText = (bool) => (bool ? "Yes" : "");
+
+const initMapSelector = () => {
+  document.querySelector("#select-map").innerHTML = "";
+
+  const select = document.createElement("select");
+  select.setAttribute("onChange", "window.location = this.value");
+
+  maps.forEach((map) => {
+    const option = document.createElement("option");
+
+    option.value = formatHref(map[1]);
+    option.innerText = map[1];
+
+    select.appendChild(option);
+
+    document.querySelector("#select-map").append(select);
+  });
+};
+
+const initMapsOverviewTable = () => {
+  fetch("./src/data/maps.json")
+    .then((response) => response.json())
+    .then((json) => {
+      maps = formatGridJsData(json);
+      renderMapsListToGridJsTable();
+      initMapSelector();
+    });
+};
 
 const formatGridJsData = (maps) => {
   const mapsArray = [];
@@ -127,4 +159,27 @@ const formatGridJsData = (maps) => {
   });
 
   return mapsArray;
+};
+
+const renderMapsListToGridJsTable = () => {
+  const mapsOverviewEl = document.getElementById("maps-overview");
+  const headersPart = ["DLC", "Buildable area", "Theme", "Little Hamlet", "Megalopolis", "Highway", "Railway", "Ship", "Air"];
+
+  if (mapsOverviewEl !== null) {
+    new gridjs.Grid({
+      columns: [
+        "Images",
+        {
+          name: "Name",
+          formatter: (cell) => gridjs.html(`<a href="${formatHref(cell)}">${cell}</b>`),
+        },
+        ...headersPart,
+      ],
+      data: maps,
+      sort: true,
+      search: true,
+      fixedHeader: true,
+      height: "500px",
+    }).render(mapsOverviewEl);
+  }
 };
