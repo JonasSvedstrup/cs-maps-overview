@@ -25,7 +25,7 @@
             55000,
             65000
         ],
-        "hasImages": false
+        "hasImages": true
     },
     {
         "name": "Grand River",
@@ -53,7 +53,7 @@
             70000,
             90000
         ],
-        "hasImages": false
+        "hasImages": true
     },
     {
         "name": "Green Plains",
@@ -81,7 +81,7 @@
             65000,
             80000
         ],
-        "hasImages": false
+        "hasImages": true
     },
     {
         "name": "Islands",
@@ -1490,7 +1490,8 @@
         "buildableArea": 70,
         "theme": "Boreal",
         "milestones": [
-            48085000
+            480,
+            85000
         ],
         "connections": {
             "highway": true,
