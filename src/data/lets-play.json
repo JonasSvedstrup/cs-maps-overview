@@ -68,6 +68,12 @@
                 "title": "How to Start a City in Cities Skylines",
                 "videos": 6,
                 "playlistUrl": "https://www.youtube.com/playlist?list=PLXdi-Ns7w3jgkSQYQJvAQsTifif-gOg20"
+            },
+            {
+                "author": "Keralis",
+                "title": "Cities Skylines",
+                "videos": 42,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLs6cC73V4fpvm0h9L6-O2k0bPbI3IOIZk"
             }
         ]
     },
@@ -134,6 +140,17 @@
                 "title": "Asanu Beach Playlist",
                 "videos": 12,
                 "playlistUrl": "https://www.youtube.com/playlist?list=PLG7Bah9JsWKZaUg6TzEAXF3Ok6US627dS"
+            }
+        ]
+    },
+    {
+        "name": "Shady Strands",
+        "playlists": [
+            {
+                "author": "Fluxtrance",
+                "title": "[C:S] Fluxburgh",
+                "videos": 64,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PL6HueNQcC6neQWujYWvtF-3fqWfZa-YT6"
             }
         ]
     }
