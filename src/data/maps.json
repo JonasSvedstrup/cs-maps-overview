@@ -1574,7 +1574,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 83,
         "theme": "Temperate",
-        "milestones": [],
+        "milestones": [
+            550,
+            85000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1588,7 +1591,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 47,
         "theme": "Boreal",
-        "milestones": [],
+        "milestones": [
+            340,
+            55000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1602,7 +1608,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 60,
         "theme": "European",
-        "milestones": [],
+        "milestones": [
+            420,
+            60000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1616,7 +1625,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 68,
         "theme": "Tropical",
-        "milestones": [],
+        "milestones": [
+            360,
+            65000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1630,7 +1642,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 83,
         "theme": "Temperate",
-        "milestones": [],
+        "milestones": [
+            480,
+            90000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1644,7 +1659,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 62,
         "theme": "Boreal",
-        "milestones": [],
+        "milestones": [
+            480,
+            80000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1658,7 +1676,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 39,
         "theme": "European",
-        "milestones": [],
+        "milestones": [
+            180,
+            36000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1672,7 +1693,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 46,
         "theme": "Tropical",
-        "milestones": [],
+        "milestones": [
+            480,
+            48000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1686,7 +1710,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 64,
         "theme": "European",
-        "milestones": [],
+        "milestones": [
+            380,
+            55000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
@@ -1700,7 +1727,10 @@
         "dlc": "Map Pack 3",
         "buildableArea": 44,
         "theme": "Temperate",
-        "milestones": [],
+        "milestones": [
+            340,
+            65000
+        ],
         "connections": {
             "highway": true,
             "railway": true,
