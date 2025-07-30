@@ -1572,91 +1572,141 @@
     {
         "name": "Caldera County",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 83,
+        "theme": "Temperate",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Expedition Harbor",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 47,
+        "theme": "Boreal",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Fondue Lake",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 60,
+        "theme": "European",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Karstlands",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 68,
+        "theme": "Tropical",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Milestone Valley",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 83,
+        "theme": "Temperate",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Nordheim",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 62,
+        "theme": "Boreal",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Orca Sound",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 39,
+        "theme": "European",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Promise Island",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 46,
+        "theme": "Tropical",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Redcliff Reservoir",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 64,
+        "theme": "European",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": false,
+            "air": true
+        },
         "hasImages": false
     },
     {
         "name": "Tranquility Cove",
         "dlc": "Map Pack 3",
-        "buildableArea": 0,
-        "theme": "",
+        "buildableArea": 44,
+        "theme": "Temperate",
         "milestones": [],
-        "connections": {},
+        "connections": {
+            "highway": true,
+            "railway": true,
+            "ship": true,
+            "air": true
+        },
         "hasImages": false
     }
 ]
