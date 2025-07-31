@@ -62,6 +62,8 @@ if (selectedMapElement) {
 }
 
 const initNav = () => {
+  const mainNavEl = qs('#main-nav');
+  mainNavEl.innerHTML = '';
   const ul = document.createElement('ul');
 
   const menuItems = [
@@ -84,7 +86,7 @@ const initNav = () => {
 
     li.innerHTML = `<a href="${menuItem.link}">${menuItem.name}</a>`;
 
-    qs('#main-nav').appendChild(li);
+    mainNavEl.appendChild(li);
   });
 };
 
