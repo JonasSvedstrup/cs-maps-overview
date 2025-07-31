@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Map Overview - Cities Skylines</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/theme.css" />
-    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav id="main-nav"></nav>
-    <div class="main">
-      <section>
-        <h1>Map Details</h1>
-        <h2 id="selected-map"></h2>
-        <p>
-          Here you can switch to a different map:
-          <span id="select-map"></span>
-        </p>
-      </section>
-      <section id="map-metadata"></section>
-      <section id="map-lets-play">
-        <h3>Let's Play</h3>
-        <p>A collection of lets play playlists on this map</p>
-        <div id="maps-playlists"></div>
-      </section>
 
-      <section>
-        <h3>Screenshots</h3>
-        <div id="screenshotNav" class="tab"></div>
-      </section>
-      <section id="screenshots"></section>
-    </div>
-    <footer id="footer"></footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet">
+</head>
 
-    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-    <script src="src/main.js"></script>
-    <script>
-      initForAllPages();
-      init(Pages.Map);
-    </script>
-  </body>
+<body>
+  <nav id="main-nav"></nav>
+  <div class="main">
+    <section>
+      <h1>Map</h1>
+      <h2 id="selected-map">Selected map</h2>
+      <p>
+        Here you can switch to a different map:
+        <span id="select-map"></span>
+      </p>
+    </section>
+    <div class="section" id="map-metadata"></div>
+    <section id="map-lets-play">
+      <h3>Let's Play</h3>
+      <p>A collection of lets play playlists on this map</p>
+      <div id="maps-playlists"></div>
+    </section>
+
+    <section>
+      <h3>Screenshots</h3>
+      <div id="screenshotNav" class="tab"></div>
+    </section>
+    <div class="section" id="screenshots"></div>
+  </div>
+  <footer id="footer"></footer>
+
+  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  <script src="src/main.js"></script>
+  <script>
+    initForAllPages();
+    init(Pages.Map);
+  </script>
+</body>
+
 </html>

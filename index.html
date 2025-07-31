@@ -1,56 +1,55 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Map Overview - Cities Skylines</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/theme.css" />
-    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav id="main-nav"></nav>
-    <div class="main">
-      <section>
-        <h1>Maps Overview</h1>
-        <h2>Cities Skylines</h2>
-        <p>
-          Welcome to <a href="https://www.paradoxinteractive.com/games/cities-skylines/about">Cities Skylines</a> Maps Overview,
-          the inspiration for this site arose after several sites expired, that featured an overview of the maps that we love to
-          build cities on.
-        </p>
-        <p>
-          Here is a list of all the maps in Cities Skylines.<br />
-          This list is initially sorted by DLC* in order of release date.<br />
-          You can search or sort in the list below.<br />
-          You can view details on each map by clicking on the name.
-        </p>
-        <p id="stringDLCs"></p>
-      </section>
-      <section class="warn">
-        <p>Site is under development.<br />
-          <ul>
-            <li>Images are only uploaded for the maps with 'Yes' under 'Images' below.</li>
-          </ul>
-        </p>
-      </section>
-      <section class="full-width">
-        <div id="maps-overview"></div>
-      </section>
-    </div>
-    <footer id="footer"></footer>
 
-    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-    <script src="src/main.js"></script>
-    <script>
-      initForAllPages();
-      init(Pages.Overview);
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Overview - Cities Skylines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="main-nav"></nav>
+  <div class="main">
+    <section>
+      <h1>Maps Overview</h1>
+      <h2>Cities Skylines</h2>
+      <p>
+        Welcome to
+        <a href="https://www.paradoxinteractive.com/games/cities-skylines/about">Cities Skylines</a>
+        Maps Overview, the inspiration for this site arose after several sites expired, that featured an overview of
+        the maps that we love to build cities on.
+      </p>
+      <p>
+        Here is a list of all the maps in Cities Skylines.<br>
+        This list is initially sorted by DLC* in order of release date.<br>
+        You can search or sort in the list below.<br>
+        You can view details on each map by clicking on the name.
+      </p>
+      <p id="stringDLCs"></p>
+    </section>
+    <section class="warn">
+      <h2>Site is under development.</h2>
+      <p>*Images are only uploaded for the maps with 'Yes' under 'Images' below.</p>
+    </section>
+    <section class="full-width">
+      <h2>Maps list</h2>
+      <div id="maps-overview"></div>
+    </section>
+  </div>
+  <footer id="footer"></footer>
+
+  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  <script src="src/main.js"></script>
+  <script>
+    initForAllPages();
+    init(Pages.Overview);
+  </script>
+</body>
+
 </html>

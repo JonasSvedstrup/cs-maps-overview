@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Map Overview - Cities Skylines</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/theme.css" />
-    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav id="main-nav"></nav>
-    <div class="main">
-      <section>
-        <h1>Let's Play</h1>
-        <h2>Cities Skylines</h2>
-        <p>
-          Here is a list of Let's Play videos, where the map is identified and the YouTuber has made a playlist.<br />
-          Only maps that are part of the vanilla game or its DLC are included in this list.<br />
-          By clicking on the titles, you will be redirected to the playlist.
-        </p>
-      </section>
-      <section class="full-width">
-        <div id="maps-playlists"></div>
-      </section>
-    </div>
-    <footer id="footer"></footer>
 
-    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-    <script src="src/main.js"></script>
-    <script>
-      initForAllPages();
-      init(Pages.LetsPlay);
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Play Cities Skylines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="main-nav"></nav>
+  <div class="main">
+    <section>
+      <h1>Let's Play</h1>
+      <h2>Cities Skylines</h2>
+      <p>
+        Here is a list of Let's Play videos, where the map is identified and
+        the YouTuber has made a playlist.<br>
+        Only maps that are part of the vanilla game or its DLC are included in
+        this list.<br>
+        By clicking on the titles, you will be redirected to the playlist.
+      </p>
+    </section>
+    <section class="full-width">
+      <h2>Playlists</h2>
+      <div id="maps-playlists"></div>
+    </section>
+  </div>
+  <footer id="footer"></footer>
+
+  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  <script src="src/main.js"></script>
+  <script>
+    initForAllPages();
+    init(Pages.LetsPlay);
+  </script>
+</body>
+
 </html>
