@@ -6,7 +6,8 @@
                 "author": "Captain_Ahvious",
                 "title": "Season 2 - Fisher Enclave",
                 "videos": 38,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVlIqMfqP5maAHb1lKdmtCOj"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVlIqMfqP5maAHb1lKdmtCOj",
+                "year": 2020
             }
         ]
     },
@@ -17,13 +18,15 @@
                 "author": "Captain_Ahvious",
                 "title": "Master Class - Coastal Flatlands",
                 "videos": 9,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVlFnM2WzmPMowk9ElfAdKgV"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVlFnM2WzmPMowk9ElfAdKgV",
+                "year": 2023
             },
             {
                 "author": "Biffa Plays Indie Games",
                 "title": "Cities Skylines - Final City (Vanilla 2023)",
                 "videos": 19,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLR5G_Kc9r-JDORqGVabBeOIWjlUhQgTzR"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLR5G_Kc9r-JDORqGVabBeOIWjlUhQgTzR",
+                "year": 2023
             }
         ]
     },
@@ -34,7 +37,8 @@
                 "author": "Captain_Ahvious",
                 "title": "Season 4 - Noyou Port City",
                 "videos": 18,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVkyCZNw4bANRWZm9pESuvRx"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVkyCZNw4bANRWZm9pESuvRx",
+                "year": 2022
             }
         ]
     },
@@ -45,7 +49,8 @@
                 "author": "Captain_Ahvious",
                 "title": "Cities Skylines",
                 "videos": 15,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVmlhCM3tepykD7L28CRoXuc"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLmqwm6ifXUVmlhCM3tepykD7L28CRoXuc",
+                "year": 2020
             }
         ]
     },
@@ -56,7 +61,8 @@
                 "author": "City Planner Plays",
                 "title": "Verde Beach",
                 "videos": 141,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLXdi-Ns7w3jinCyFeq5KlZYhUBdR3tl8s"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLXdi-Ns7w3jinCyFeq5KlZYhUBdR3tl8s",
+                "year": 2020
             }
         ]
     },
@@ -67,13 +73,15 @@
                 "author": "City Planner Plays",
                 "title": "How to Start a City in Cities Skylines",
                 "videos": 6,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLXdi-Ns7w3jgkSQYQJvAQsTifif-gOg20"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLXdi-Ns7w3jgkSQYQJvAQsTifif-gOg20",
+                "year": 2021
             },
             {
                 "author": "Keralis",
                 "title": "Cities Skylines",
                 "videos": 42,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLs6cC73V4fpvm0h9L6-O2k0bPbI3IOIZk"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLs6cC73V4fpvm0h9L6-O2k0bPbI3IOIZk",
+                "year": 2015
             }
         ]
     },
@@ -84,7 +92,8 @@
                 "author": "OVERCHARGED EGG",
                 "title": "Palaven - Cities Skylines Vanilla",
                 "videos": 100,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLW9ZbMsZn0d7Vn13rcNFljDtaGktLNQSR"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLW9ZbMsZn0d7Vn13rcNFljDtaGktLNQSR",
+                "year": 2020
             }
         ]
     },
@@ -95,7 +104,8 @@
                 "author": "OVERCHARGED EGG",
                 "title": "Orchid Bay | Cities Skylines Build Guide 2",
                 "videos": 119,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLW9ZbMsZn0d6IuTPZkTaFdkykz2XXN26C"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLW9ZbMsZn0d6IuTPZkTaFdkykz2XXN26C",
+                "year": 2023
             }
         ]
     },
@@ -106,7 +116,8 @@
                 "author": "CityZilla",
                 "title": "Cities Skylines Beginners Guide",
                 "videos": 19,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLRNT0lBP5WIX2Ni6CBNaQVPh3daBqP5Si"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLRNT0lBP5WIX2Ni6CBNaQVPh3daBqP5Si",
+                "year": 2022
             }
         ]
     },
@@ -117,7 +128,22 @@
                 "author": "Move The Mouse",
                 "title": "Cities Skylines How To (Updated for 2025)",
                 "videos": 21,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLyDZG2zaBHLbSX0vhiMg2FnxyIBsPFa2b"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLyDZG2zaBHLbSX0vhiMg2FnxyIBsPFa2b",
+                "year": 2020
+            },
+            {
+                "author": "Skye Storme",
+                "title": "Cities: Skylines Building Manhattan - Gameplay",
+                "videos": 62,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLbCLzFKeiWkPKe53RM24qh1vzhn9PBXuf",
+                "year": 2015
+            },
+            {
+                "author": "Load2Map",
+                "title": "Cities Skylines - Diamond Coast (No MOD, No DLC)",
+                "videos": 1,
+                "playlistUrl": "https://www.youtube.com/watch?v=DAdNr98_RsA&t=335s",
+                "year": 2021
             }
         ]
     },
@@ -128,7 +154,8 @@
                 "author": "Grahtles",
                 "title": "Cities Skylines Series 1 Brindelton",
                 "videos": 20,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLndEK_o5u_i1qE1MxKny5iG-d-r9ZJj8d"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLndEK_o5u_i1qE1MxKny5iG-d-r9ZJj8d",
+                "year": 2020
             }
         ]
     },
@@ -139,7 +166,8 @@
                 "author": "RCB",
                 "title": "Asanu Beach Playlist",
                 "videos": 12,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PLG7Bah9JsWKZaUg6TzEAXF3Ok6US627dS"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLG7Bah9JsWKZaUg6TzEAXF3Ok6US627dS",
+                "year": 2022
             }
         ]
     },
@@ -150,7 +178,68 @@
                 "author": "Fluxtrance",
                 "title": "[C:S] Fluxburgh",
                 "videos": 64,
-                "playlistUrl": "https://www.youtube.com/playlist?list=PL6HueNQcC6neQWujYWvtF-3fqWfZa-YT6"
+                "playlistUrl": "https://www.youtube.com/playlist?list=PL6HueNQcC6neQWujYWvtF-3fqWfZa-YT6",
+                "year": 2015
+            }
+        ]
+    },
+    {
+        "name": "Marin Bay",
+        "playlists": [
+            {
+                "author": "Wheaty Waffle",
+                "title": "Westfield, Cities: Skylines",
+                "videos": 54,
+                "playlistUrl": "https://www.youtube.com/playlist?list=PLroi_w6nwojRPeZ8sNcj1sVbT5eHn_YZf",
+                "year": 2020
+            }
+        ]
+    },
+    {
+        "name": "Northwood Hills",
+        "playlists": [
+            {
+                "author": "Load2Map",
+                "title": "Cities Skylines - Northwood Hills (No MODs, Disaster ON)",
+                "videos": 1,
+                "playlistUrl": "https://www.youtube.com/watch?v=SyD44kGf5v4",
+                "year": 2021
+            }
+        ]
+    },
+    {
+        "name": "Table Mountains",
+        "playlists": [
+            {
+                "author": "Load2Map",
+                "title": "Cities Skylines - Map Pack 2 - Table Mountains (4x, No MODs)",
+                "videos": 1,
+                "playlistUrl": "https://www.youtube.com/watch?v=i-nnFwqvNrQ",
+                "year": 2023
+            }
+        ]
+    },
+    {
+        "name": "Foggy Hills",
+        "playlists": [
+            {
+                "author": "Load2Map",
+                "title": "Cities Skylines - Foggy Hills (No MODs, NO DLCs)",
+                "videos": 1,
+                "playlistUrl": "https://www.youtube.com/watch?v=DntaS5YFXe8&t=56s",
+                "year": 2023
+            }
+        ]
+    },
+    {
+        "name": "Windfield",
+        "playlists": [
+            {
+                "author": "Load2Map",
+                "title": "Cities Skylines - Windfield | No MODs 25Tiles (850K)",
+                "videos": 1,
+                "playlistUrl": "https://www.youtube.com/watch?v=REOyax92lGQ&t=199s",
+                "year": 2021
             }
         ]
     }

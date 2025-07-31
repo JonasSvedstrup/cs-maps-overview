@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/theme.css" />
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
   </head>
   <body>
     <nav id="main-nav"></nav>
@@ -19,7 +20,6 @@
       <section>
         <h1>Map Details</h1>
         <h2 id="selected-map"></h2>
-        <h2></h2>
         <p>
           Here you can switch to a different map:
           <span id="select-map"></span>
@@ -29,7 +29,7 @@
       <section id="map-lets-play">
         <h3>Let's Play</h3>
         <p>A collection of lets play playlists on this map</p>
-        <div id="lets-play"></div>
+        <div id="maps-playlists"></div>
       </section>
 
       <section>
@@ -40,9 +40,8 @@
     </div>
     <footer id="footer"></footer>
 
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
     <script src="src/main.js"></script>
-    <script src="src/map.js"></script>
-    <script src="src/lets-play.js"></script>
     <script>
       initForAllPages();
       init(Pages.Map);

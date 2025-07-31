@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/theme.css" />
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
   </head>
   <body>
     <nav id="main-nav"></nav>
@@ -21,18 +22,18 @@
         <h2>Cities Skylines</h2>
         <p>
           Here is a list of Let's Play videos, where the map is identified and the YouTuber has made a playlist.<br />
+          Only maps that are part of the vanilla game or its DLC are included in this list.<br />
           By clicking on the titles, you will be redirected to the playlist.
         </p>
       </section>
-      <section>
-        <div id="lets-play"></div>
+      <section class="full-width">
+        <div id="maps-playlists"></div>
       </section>
     </div>
     <footer id="footer"></footer>
 
     <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
     <script src="src/main.js"></script>
-    <script src="src/lets-play.js"></script>
     <script>
       initForAllPages();
       init(Pages.LetsPlay);
