@@ -242,5 +242,17 @@
                 "year": 2021
             }
         ]
+    },
+    {
+        "name": "Roslyn Peninsula",
+        "playlists": [
+            {
+                "author": "Load2Map",
+                "title": "Cities Skylines Campus - Roslyn Peninsula",
+                "videos": 1,
+                "playlistUrl": "https://www.youtube.com/watch?v=4ott9Dqpg64",
+                "year": 2019
+            }
+        ]
     }
 ]
