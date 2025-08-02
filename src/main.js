@@ -14,11 +14,14 @@ let gridTableOptions = {
   height: '500px',
 };
 let maps = [];
+let mapsData = [];
+let mapsCompareWith = 'tiles';
 
 const Pages = {
-  Overview: `overview`,
-  Map: `map`,
-  LetsPlay: `Let's play`,
+  Overview: `Overview`,
+  Map: `Map`,
+  LetsPlay: `Let's Play`,
+  Compare: 'Compare',
 };
 
 const Connections = {
@@ -46,6 +49,7 @@ const Milestones = {
 
 const qs = (target) => document.querySelector(target);
 const formatMapName = (str) => str.replace('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
+const formatMapNameShort = (str) => str.replace(' ', '-').toLowerCase();
 const formatHref = (str) => `map.html?map=${str.toLowerCase().replace(' ', '-')}`;
 const formatNumer = (number) => (number ? number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') : '');
 const formatBooleanToText = (bool) => (bool ? 'Yes' : '');
@@ -62,7 +66,7 @@ if (selectedMapElement) {
   selectedMapElement.innerHTML = formatMapName(selectedMap);
 }
 
-const initNav = () => {
+const initNav = (page) => {
   const mainNavEl = qs('#main-nav');
   mainNavEl.innerHTML = '';
   const ul = document.createElement('ul');
@@ -80,12 +84,17 @@ const initNav = () => {
       name: "Let's Play",
       link: 'lets-play.html',
     },
+    {
+      name: 'Compare',
+      link: 'compare.html',
+    },
   ];
 
   menuItems.forEach((menuItem) => {
     const li = document.createElement('li');
+    const active = menuItem.name == page ? 'active' : '';
 
-    li.innerHTML = `<a href="${menuItem.link}">${menuItem.name}</a>`;
+    li.innerHTML = `<a href="${menuItem.link}" class="${active}">${menuItem.name}</a>`;
 
     mainNavEl.appendChild(li);
   });
@@ -390,12 +399,94 @@ const showScreenshot = (evt, type) => {
   }
 };
 
-const initForAllPages = () => {
-  initNav();
+const prepareMapsData = async () => {
+  const urlsToFetch = ['./src/data/maps.json'];
+  const fetchPromises = urlsToFetch.map((url) => fetch(url).then((response) => response.json()));
+  await Promise.all(fetchPromises)
+    .then((responses) => {
+      const responseData = responses.map((response) => response);
+
+      mapData = responseData[0];
+    })
+    .catch((error) => console.error('Error prepareMapsData:', error));
+};
+
+const initCompareScreenshots = async () => {
+  await prepareMapsData();
+  updateCompareScreenshotsNav();
+  updateCompareScreenshots();
+};
+
+const showCompareImg = (mapShort) => {
+  showModal();
+
+  qs('#modal-img').src = `maps/${mapShort}/${mapShort}-${mapsCompareWith}.png`;
+};
+
+const updateCompareScreenshotsNav = () => {
+  const compareScreenshot = qs('#compare-screenshots-nav');
+  let htmlStr = '<div class="tab">';
+
+  screenshotElements.forEach((screenshot) => {
+    let active = screenshot === 'start' ? ' active' : '';
+    htmlStr += `
+      <button class="tablinks ${screenshot}${active}" onclick="updateCompareScreenshots(this, '${screenshot}')">${screenshot}</button>
+    `;
+  });
+
+  htmlStr += `</div>`;
+
+  compareScreenshot.innerHTML = htmlStr;
+};
+
+const updateCompareScreenshots = (element, compare = 'tiles') => {
+  const compareScreenshot = qs('#compare-screenshots');
+  let htmlStr = '';
+
+  if (element) {
+    mapsCompareWith = element.className.replace('tablinks ', '');
+
+    const tabs = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tabs.length; i++) {
+      tabs[i].className = tabs[i].className.replace(' active', '');
+    }
+
+    qs(`.${element.className.replace(' ', '.')}`).classList.add('active');
+  }
+
+  mapData.forEach((map) => {
+    const { name, hasImages } = map;
+    const mapShort = formatMapNameShort(name);
+
+    if (hasImages) {
+      htmlStr += `
+      <div class="compare-wrapper">
+        <img onClick="showCompareImg('${mapShort}')" class="compare-img" src="/maps/${mapShort}/${mapShort}-${compare}.png">
+        <h2><a href="map.html?map=${mapShort}">${name}</a></h2>
+      </div>
+    `;
+    }
+  });
+
+  compareScreenshot.innerHTML = htmlStr;
+};
+
+const showModal = () => {
+  qs('#maps-compare-modal').style.display = 'block';
+};
+
+const hideModal = () => {
+  qs('#maps-compare-modal').style.display = 'none';
+};
+
+const initForAllPages = (page) => {
+  initNav(page);
   initFooter();
 };
 
 const init = (page) => {
+  initForAllPages(page);
+
   switch (page) {
     case Pages.Overview:
       initMapsOverviewTable();
@@ -411,6 +502,9 @@ const init = (page) => {
       break;
     case Pages.LetsPlay:
       initMapsPlaylistsTable();
+      break;
+    case Pages.Compare:
+      initCompareScreenshots();
       break;
   }
 };

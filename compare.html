@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Map Overview - Here is a list of all the maps in Cities Skylines">
+    <meta name="keywords" content="Cities Skylines Maps, Cities Skylines DLC Maps">
+    <meta name="author" content="Jonas Svedstrup">
+    <meta name="viewport" content="width=600, initial-scale=0">
+    <title>Map Compare - Cities Skylines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+    <nav id="main-nav">
+        <a href="index.html">Overview</a>
+        <a href="map.html?map=black-woods">Map</a>
+        <a href="lets-play.html">Let's Play</a>
+    </nav>
+    <div class="main">
+        <div id="maps-compare-modal" class="modal">
+            <div class="modal-content">
+                <a class="close-modal" onClick="hideModal()">Close</a>
+                <img id="modal-img" src="maps/black-woods/black-woods-tiles.png">
+            </div>
+        </div>
+        <section>
+            <h1>Maps Compare</h1>
+            <h2>Cities Skylines</h2>
+            <p>Here you can compare maps by screenshots taken in the game.</p>
+        </section>
+        <section class="full-width">
+            <div id="compare-screenshots-nav"></div>
+            <div id="compare-screenshots"></div>
+        </section>
+    </div>
+    <footer id="footer"></footer>
+
+    <script src="src/main.js"></script>
+    <script>
+        init(Pages.Compare);
+    </script>
+</body>
+
+</html>
