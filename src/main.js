@@ -362,7 +362,6 @@ const initScreenshots = () => {
 
     htmlStr += `
       <div id="${type}" class="tabcontent" ${styleStr}>
-        <h4>${formatMapName(type)}</h4>
         <p>${imgsParagraphs[type]}</p>
         <a id="map-${type}-link">
           <img id="map-${type}-img">
