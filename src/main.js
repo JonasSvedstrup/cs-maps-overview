@@ -1,4 +1,4 @@
-const screenshotElements = ['start', 'top', 'tiles', 'height', 'resources', 'wind', 'fish'];
+const screenshotElements = ['start', 'top', 'tiles', 'height', 'resources', 'wind', 'fish', 'transport'];
 const imgsParagraphs = {
   tiles: 'Show an overview of all 25 tiles.',
   start: 'The start area, where the first tile is.',
@@ -7,6 +7,7 @@ const imgsParagraphs = {
   resources: 'Using the natural resource overlay.',
   wind: 'The wind map.',
   fish: 'The fish map.',
+  transport: 'The transport map',
 };
 let gridTableOptions = {
   search: true,
