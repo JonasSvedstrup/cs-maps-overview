@@ -24,6 +24,25 @@ const Pages = {
   Compare: 'Compare',
 };
 
+const DLCs = [
+  'Vanilla',
+  'Snowfall',
+  'Natural Disasters',
+  'Mass Transit',
+  'Green Cities',
+  'Parklife',
+  'Industries',
+  'Campus',
+  'Sunset Harbor',
+  'Airports',
+  'Plazas and Promenades',
+  'Financial Districts',
+  'Hotels & Retreats',
+  'Map Pack 1',
+  'Map Pack 2',
+  'Map Pack 3',
+];
+
 const Connections = {
   Highway: `Highway`,
   Railway: `Railway`,
@@ -460,7 +479,7 @@ const updateCompareScreenshots = (element, compare = 'tiles') => {
     if (hasImages) {
       htmlStr += `
       <div class="compare-wrapper">
-        <img onClick="showCompareImg('${mapShort}')" class="compare-img" src="/maps/${mapShort}/${mapShort}-${compare}.png">
+        <img onClick="showCompareImg('${mapShort}')" class="compare-img" src="maps/${mapShort}/${mapShort}-${compare}.png">
         <h2><a href="map.html?map=${mapShort}">${name}</a></h2>
       </div>
     `;
