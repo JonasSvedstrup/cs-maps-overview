@@ -73,7 +73,7 @@ const initNav = () => {
     },
     {
       name: 'Map',
-      link: 'map.html?map=black-woods',
+      link: 'map.html?map=roslyn-peninsula',
     },
     {
       name: "Let's Play",
