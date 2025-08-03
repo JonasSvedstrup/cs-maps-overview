@@ -1,4 +1,4 @@
-const screenshotElements = ['start', 'top', 'tiles', 'height', 'resources', 'wind', 'fish', 'transport'];
+const screenshotElements = ['top', 'tiles', 'start', 'height', 'resources', 'wind', 'fish', 'transport'];
 const imgsParagraphs = {
   tiles: 'Show an overview of all 25 tiles.',
   start: 'The start area, where the first tile is.',
@@ -16,7 +16,8 @@ let gridTableOptions = {
 let isSearching = false;
 let maps = [];
 let mapsData = [];
-let mapsCompareWith = 'tiles';
+const mapsCompareWithDefault = 'top';
+let mapsCompareWith = mapsCompareWithDefault;
 
 let grid = null;
 
@@ -425,7 +426,7 @@ const initScreenshotNav = () => {
   let htmlStr = '';
 
   screenshotElements.forEach((nav) => {
-    const tablinks = nav === 'start' ? ' active' : '';
+    const tablinks = nav === mapsCompareWithDefault ? ' active' : '';
 
     htmlStr += `
       <button class="tablinks${tablinks}" onclick="showScreenshot(event, '${nav}')">${formatMapName(nav)}</button>
@@ -441,7 +442,7 @@ const initScreenshots = () => {
   let htmlStr = '';
 
   screenshotElements.forEach((type) => {
-    let styleStr = type === 'start' ? `` : `style="display: none"`;
+    let styleStr = type === mapsCompareWithDefault ? `` : `style="display: none"`;
 
     htmlStr += `
       <div id="${type}" class="tabcontent" ${styleStr}>
@@ -512,7 +513,7 @@ const updateCompareScreenshotsNav = () => {
   let htmlStr = '<div class="tab">';
 
   screenshotElements.forEach((screenshot) => {
-    let active = screenshot === 'start' ? ' active' : '';
+    let active = screenshot === mapsCompareWith ? ' active' : '';
     htmlStr += `
       <button class="tablinks ${screenshot}${active}" onclick="updateCompareScreenshots(this, '${screenshot}')">${screenshot}</button>
     `;
@@ -523,7 +524,7 @@ const updateCompareScreenshotsNav = () => {
   compareScreenshot.innerHTML = htmlStr;
 };
 
-const updateCompareScreenshots = (element, compare = 'tiles') => {
+const updateCompareScreenshots = (element, compare = mapsCompareWithDefault) => {
   const compareScreenshot = qs('#compare-screenshots');
   let htmlStr = '';
 
