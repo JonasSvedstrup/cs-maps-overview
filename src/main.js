@@ -13,9 +13,12 @@ let gridTableOptions = {
   search: true,
   height: '500px',
 };
+let isSearching = false;
 let maps = [];
 let mapsData = [];
 let mapsCompareWith = 'tiles';
+
+let grid = null;
 
 const Pages = {
   Overview: `Overview`,
@@ -218,6 +221,23 @@ const initMapSelector = () => {
   }
 };
 
+const pickRandomMap = () => {
+  const mapsSplice = mapsData.filter((map) => map.hasImages === true);
+
+  const randomNumber = Math.floor(Math.random() * mapsSplice.length);
+
+  location.href = `map.html?map=${formatMapNameShort(mapsSplice[randomNumber].name)}`;
+};
+
+const initPickRandomMap = async () => {
+  const pickRandomMapElement = qs('#pick-random-map');
+
+  if (pickRandomMapElement) {
+    await prepareMapsData();
+    pickRandomMapElement.addEventListener('click', pickRandomMap);
+  }
+};
+
 const initMapsOverviewTable = async () => {
   const urlsToFetch = ['./src/data/maps.json'];
   const fetchPromises = urlsToFetch.map((url) => fetch(url).then((response) => response.json()));
@@ -251,6 +271,7 @@ const initMapsOverviewTable = async () => {
       maps = overview;
 
       initMapSelector();
+      initPickRandomMap();
       initStringDLCs();
 
       renderDataToGridJsTable(columns, overview, 'maps-overview');
@@ -300,10 +321,49 @@ const initMapsPlaylistsTable = async () => {
     .catch((error) => console.error('Error fetching data (initMapsPlaylistsTable):', error));
 };
 
+const isSearchActive = (e) => {
+  if (e.srcElement.value.length > 0 && !isSearching) {
+    isSearching = true;
+
+    gridTableOptions.height = 'auto';
+
+    setTimeout(() => {
+      grid
+        .updateConfig({
+          height: gridTableOptions.height,
+        })
+        .forceRender();
+
+      // todo: set focus to search
+      document.querySelector('input').focus();
+
+      if (gridTableOptions.search) {
+        document.querySelector('input').addEventListener('input', isSearchActive);
+      }
+    }, 2000);
+  }
+
+  if (isSearching && e.srcElement.value.length == 0) {
+    gridTableOptions.height = '500px';
+
+    grid
+      .updateConfig({
+        height: gridTableOptions.height,
+      })
+      .forceRender();
+
+    if (gridTableOptions.search) {
+      document.querySelector('input').addEventListener('input', isSearchActive);
+    }
+
+    isSearching = false;
+  }
+};
+
 const renderDataToGridJsTable = (columns, data, targetId) => {
   const tableElement = document.getElementById(targetId);
   if (tableElement !== null) {
-    new gridjs.Grid({
+    grid = new gridjs.Grid({
       columns: columns,
       data: data,
       sort: true,
@@ -317,6 +377,10 @@ const renderDataToGridJsTable = (columns, data, targetId) => {
         noRecordsFound: 'No playlists yet for this map.',
       },
     }).render(tableElement);
+
+    if (gridTableOptions.search) {
+      document.querySelector('input').addEventListener('input', isSearchActive);
+    }
   }
 };
 
@@ -424,7 +488,9 @@ const prepareMapsData = async () => {
     .then((responses) => {
       const responseData = responses.map((response) => response);
 
+      // todo: clean up
       mapData = responseData[0];
+      mapsData = responseData[0];
     })
     .catch((error) => console.error('Error prepareMapsData:', error));
 };
@@ -497,6 +563,13 @@ const hideModal = () => {
   qs('#maps-compare-modal').style.display = 'none';
 };
 
+const initBackgroundImage = () => {
+  qs('#page-map').style = `
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), #141e32),
+    url('/maps/${selectedMap}/${selectedMap}-top.png')
+  `;
+};
+
 const initForAllPages = (page) => {
   initNav(page);
   initFooter();
@@ -517,6 +590,7 @@ const init = (page) => {
       initMapsPlaylistsTable();
       initScreenshotNav();
       initScreenshots();
+      initBackgroundImage();
       break;
     case Pages.LetsPlay:
       initMapsPlaylistsTable();

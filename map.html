@@ -23,13 +23,14 @@
     <a href="map.html?map=black-woods">Map</a>
     <a href="lets-play.html">Let's Play</a>
   </nav>
-  <div class="main">
+  <div class="main" id="page-map">
     <section>
       <h1>Map</h1>
       <h2 id="selected-map">Selected map</h2>
       <p>
         Here you can switch to a different map:
         <span id="select-map"></span>
+        or <button class="button" id="pick-random-map">pick a random* map</button>
       </p>
     </section>
     <div class="section" id="map-metadata"></div>
@@ -44,6 +45,9 @@
       <div id="screenshotNav" class="tab"></div>
     </section>
     <div class="section" id="screenshots"></div>
+    <section>
+      <p>*Random between maps that have added Screenshots</p>
+    </section>
   </div>
   <footer id="footer"></footer>
 
