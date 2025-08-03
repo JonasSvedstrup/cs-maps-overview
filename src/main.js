@@ -14,8 +14,11 @@ let gridTableOptions = {
   height: '500px',
 };
 let isSearching = false;
-let maps = [];
+
 let mapsData = [];
+let letsPlayData = [];
+let authorsData = [];
+
 const mapsCompareWithDefault = 'top';
 let mapsCompareWith = mapsCompareWithDefault;
 
@@ -46,48 +49,6 @@ const DLCs = [
   'Map Pack 2',
   'Map Pack 3',
 ];
-
-const Connections = {
-  Highway: `Highway`,
-  Railway: `Railway`,
-  Ship: `Ship`,
-  Air: `Air`,
-};
-
-const Milestones = {
-  LittleHamlet: 'Little Hamlet',
-  WorthyVillage: 'Worthy Village',
-  TinyTown: 'Tiny Town',
-  BoomTown: 'Boom Town',
-  BusyTown: 'Busy Town',
-  BigTown: 'Big Town',
-  SmallCity: 'Small City',
-  BigCity: 'Big City',
-  GrandCity: 'Grand City',
-  CapitalCity: 'Capital City',
-  ColossalCity: 'Colossal City',
-  Metropolis: 'Metropolis',
-  Megalopolis: 'Megalopolis',
-};
-
-const qs = (target) => document.querySelector(target);
-const formatMapName = (str) => str.replace('-', ' ').replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
-const formatMapNameShort = (str) => str.replace(' ', '-').toLowerCase();
-const formatHref = (str) => `map.html?map=${str.toLowerCase().replace(' ', '-')}`;
-const formatNumer = (number) => (number ? number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') : '');
-const formatBooleanToText = (bool) => (bool ? 'Yes' : '');
-
-const getQueryString = (n) => {
-  var half = location.search.split(n + '=')[1];
-  return half !== undefined ? decodeURIComponent(half.split('&')[0]) : null;
-};
-
-const selectedMapElement = qs('#selected-map');
-const selectedMap = getQueryString('map');
-
-if (selectedMapElement) {
-  selectedMapElement.innerHTML = formatMapName(selectedMap);
-}
 
 const initNav = (page) => {
   const mainNavEl = qs('#main-nav');
@@ -136,7 +97,7 @@ const initStringDLCs = () => {
   if (stringDlcElement) {
     const paragraph = document.createElement('p');
 
-    const dlcs = [...new Set(maps.map((map) => map[2]))].join(', ').replace('Vanilla, ', '');
+    const dlcs = [...new Set(mapsData.map((map) => map.dlc))].join(', ').replace('Vanilla, ', '');
 
     paragraph.innerText = `*${dlcs}`;
 
@@ -197,6 +158,14 @@ const convertToGridJSDataPlaylists = (mapData, authorData) => {
   return gridJsArray;
 };
 
+const initSelectedMap = () => {
+  const selectedMapElement = qs('#selected-map');
+
+  if (selectedMapElement) {
+    selectedMapElement.innerHTML = formatMapName(selectedMap);
+  }
+};
+
 const initMapSelector = () => {
   const selectMapElement = qs('#select-map');
 
@@ -206,12 +175,12 @@ const initMapSelector = () => {
     const select = document.createElement('select');
     select.setAttribute('onChange', 'window.location = this.value');
 
-    maps.forEach((map) => {
+    mapsData.forEach((map) => {
       const option = document.createElement('option');
 
-      option.value = formatHref(map[1]);
-      option.innerText = map[1];
-      if (map[1] === formatMapName(selectedMap)) {
+      option.value = formatHref(map.name);
+      option.innerText = map.name;
+      if (map.name === formatMapName(selectedMap)) {
         option.selected = 'selected';
       }
 
@@ -240,86 +209,59 @@ const initPickRandomMap = async () => {
 };
 
 const initMapsOverviewTable = async () => {
-  const urlsToFetch = ['./src/data/maps.json'];
-  const fetchPromises = urlsToFetch.map((url) => fetch(url).then((response) => response.json()));
-  Promise.all(fetchPromises)
-    .then((responses) => {
-      const responseData = responses.map((response) => response);
+  const columns = [
+    {
+      name: 'Images',
+    },
+    {
+      name: 'Name',
+      formatter: (cell) => gridjs.html(`<a href="${formatHref(cell)}">${cell}</b>`),
+    },
+    'DLC',
+    'Buildable area',
+    'Theme',
+    'Little Hamlet',
+    'Megalopolis',
+    'Highway',
+    'Railway',
+    'Ship',
+    'Air',
+  ];
 
-      const mapData = responseData[0];
+  const gridData = convertToGridJSDataOverview(mapsData);
 
-      const columns = [
-        {
-          name: 'Images',
-        },
-        {
-          name: 'Name',
-          formatter: (cell) => gridjs.html(`<a href="${formatHref(cell)}">${cell}</b>`),
-        },
-        'DLC',
-        'Buildable area',
-        'Theme',
-        'Little Hamlet',
-        'Megalopolis',
-        'Highway',
-        'Railway',
-        'Ship',
-        'Air',
-      ];
-
-      const overview = convertToGridJSDataOverview(mapData);
-
-      maps = overview;
-
-      initMapSelector();
-      initPickRandomMap();
-      initStringDLCs();
-
-      renderDataToGridJsTable(columns, overview, 'maps-overview');
-    })
-    .catch((error) => console.error('Error fetching data (initMapsOverviewTable):', error));
+  renderDataToGridJsTable(columns, gridData, 'maps-overview');
 };
 
 const initMapsPlaylistsTable = async () => {
-  const urlsToFetch = ['./src/data/lets-play.json', './src/data/authors.json'];
-  const fetchPromises = urlsToFetch.map((url) => fetch(url).then((response) => response.json()));
-  Promise.all(fetchPromises)
-    .then((responses) => {
-      const responseData = responses.map((response) => response);
+  const columns = [
+    {
+      name: 'url',
+      hidden: true,
+    },
+    {
+      name: 'profileLink',
+      hidden: true,
+    },
+    {
+      name: 'Name',
+      formatter: (cell) => gridjs.html(`<a href="${formatHref(cell)}">${cell}</b>`),
+    },
+    {
+      name: 'Author',
+      formatter: (cell, row) => gridjs.html(`<a href="${row.cells[1].data}">${cell}</a>`),
+    },
+    {
+      name: 'Playlist title',
+      formatter: (cell, row) => gridjs.html(`<a target="_blank" href="${row.cells[0].data}">${cell}</a>`),
+    },
+    'Videos',
+    'Year',
+  ];
 
-      const mapData = responseData[0];
-      const authorData = responseData[1];
+  const gridData = convertToGridJSDataPlaylists(letsPlayData, authorsData);
 
-      const playlists = convertToGridJSDataPlaylists(mapData, authorData);
-
-      const columns = [
-        {
-          name: 'url',
-          hidden: true,
-        },
-        {
-          name: 'profileLink',
-          hidden: true,
-        },
-        {
-          name: 'Name',
-          formatter: (cell) => gridjs.html(`<a href="${formatHref(cell)}">${cell}</b>`),
-        },
-        {
-          name: 'Author',
-          formatter: (cell, row) => gridjs.html(`<a href="${row.cells[1].data}">${cell}</a>`),
-        },
-        {
-          name: 'Playlist title',
-          formatter: (cell, row) => gridjs.html(`<a target="_blank" href="${row.cells[0].data}">${cell}</a>`),
-        },
-        'Videos',
-        'Year',
-      ];
-
-      renderDataToGridJsTable(columns, playlists, 'maps-playlists');
-    })
-    .catch((error) => console.error('Error fetching data (initMapsPlaylistsTable):', error));
+  renderDataToGridJsTable(columns, gridData, 'maps-playlists');
 };
 
 const isSearchActive = (e) => {
@@ -335,7 +277,6 @@ const isSearchActive = (e) => {
         })
         .forceRender();
 
-      // todo: set focus to search
       document.querySelector('input').focus();
 
       if (gridTableOptions.search) {
@@ -386,38 +327,35 @@ const renderDataToGridJsTable = (columns, data, targetId) => {
 };
 
 const initMapDetails = () => {
-  fetch('./src/data/maps.json')
-    .then((response) => response.json())
-    .then((json) => {
-      const mapData = json.filter((map) => map.name === formatMapName(selectedMap))[0];
-      const { name, theme, dlc, connections, buildableArea, milestones } = mapData;
-      const { highway, railway, ship, air } = connections;
+  const singleMapData = mapsData.filter((map) => map.name === formatMapName(selectedMap))[0];
 
-      const littleHamlet = formatNumer(milestones[0]);
-      const megalopolis = formatNumer(milestones[milestones.length - 1]);
+  const { name, theme, dlc, connections, buildableArea, milestones } = singleMapData;
+  const { highway, railway, ship, air } = connections;
 
-      const mapMetaData = `
-        <h2>Details</h2>
-        <p>
-          Name: ${name}<br>
-          Theme: ${theme}<br>
-          DLC: ${dlc}<br>
-          Buildable area: ${buildableArea}%<br>
-          <br>
-          Connections:
-            ${highway ? Connections.Highway : ''},
-            ${railway ? Connections.Railway : ''},
-            ${ship ? Connections.Ship : ''},
-            ${air ? Connections.Air : ''}<br>
-          <br>
-          Milestones:<br>
-            ${Milestones.LittleHamlet}: ${littleHamlet}<br>
-            ${Milestones.Megalopolis}: ${megalopolis}
-        </p>
-      `;
+  const littleHamlet = formatNumer(milestones[0]);
+  const megalopolis = formatNumer(milestones[milestones.length - 1]);
 
-      qs('#map-metadata').innerHTML = mapMetaData;
-    });
+  const mapMetaData = `
+    <h2>Details</h2>
+    <p>
+      Name: ${name}<br>
+      Theme: ${theme}<br>
+      DLC: ${dlc}<br>
+      Buildable area: ${buildableArea}%<br>
+      <br>
+      Connections:
+        ${highway ? Connections.Highway : ''},
+        ${railway ? Connections.Railway : ''},
+        ${ship ? Connections.Ship : ''},
+        ${air ? Connections.Air : ''}<br>
+      <br>
+      Milestones:<br>
+        ${Milestones.LittleHamlet}: ${littleHamlet}<br>
+        ${Milestones.Megalopolis}: ${megalopolis}
+    </p>
+  `;
+
+  qs('#map-metadata').innerHTML = mapMetaData;
 };
 
 const initScreenshotNav = () => {
@@ -437,6 +375,7 @@ const initScreenshotNav = () => {
 };
 
 const initScreenshots = () => {
+  initScreenshotNav();
   const screenshot = qs('#screenshots');
 
   let htmlStr = '';
@@ -482,22 +421,7 @@ const showScreenshot = (evt, type) => {
   }
 };
 
-const prepareMapsData = async () => {
-  const urlsToFetch = ['./src/data/maps.json'];
-  const fetchPromises = urlsToFetch.map((url) => fetch(url).then((response) => response.json()));
-  await Promise.all(fetchPromises)
-    .then((responses) => {
-      const responseData = responses.map((response) => response);
-
-      // todo: clean up
-      mapData = responseData[0];
-      mapsData = responseData[0];
-    })
-    .catch((error) => console.error('Error prepareMapsData:', error));
-};
-
-const initCompareScreenshots = async () => {
-  await prepareMapsData();
+const initCompareScreenshots = () => {
   updateCompareScreenshotsNav();
   updateCompareScreenshots();
 };
@@ -539,7 +463,7 @@ const updateCompareScreenshots = (element, compare = mapsCompareWithDefault) => 
     qs(`.${element.className.replace(' ', '.')}`).classList.add('active');
   }
 
-  mapData.forEach((map) => {
+  mapsData.forEach((map) => {
     const { name, hasImages } = map;
     const mapShort = formatMapNameShort(name);
 
@@ -556,14 +480,6 @@ const updateCompareScreenshots = (element, compare = mapsCompareWithDefault) => 
   compareScreenshot.innerHTML = htmlStr;
 };
 
-const showModal = () => {
-  qs('#maps-compare-modal').style.display = 'block';
-};
-
-const hideModal = () => {
-  qs('#maps-compare-modal').style.display = 'none';
-};
-
 const initBackgroundImage = () => {
   qs('#page-map').style = `
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), #141e32),
@@ -576,27 +492,42 @@ const initForAllPages = (page) => {
   initFooter();
 };
 
-const init = (page) => {
+const init = async (page) => {
   initForAllPages(page);
 
   switch (page) {
     case Pages.Overview:
+      await prepareMapsData();
+
+      initStringDLCs();
       initMapsOverviewTable();
       break;
     case Pages.Map:
+      await prepareMapsData();
+      await prepareLetsPlayData();
+      await prepareAuthorsData();
+
       gridTableOptions.height = 'auto';
       gridTableOptions.search = false;
-      initMapsOverviewTable();
+
+      initBackgroundImage();
+      initSelectedMap();
+      initMapSelector();
+      initPickRandomMap();
       initMapDetails();
       initMapsPlaylistsTable();
-      initScreenshotNav();
       initScreenshots();
-      initBackgroundImage();
+
       break;
     case Pages.LetsPlay:
+      await prepareLetsPlayData();
+      await prepareAuthorsData();
+
       initMapsPlaylistsTable();
       break;
     case Pages.Compare:
+      await prepareMapsData();
+
       initCompareScreenshots();
       break;
   }
