@@ -802,7 +802,7 @@
             "ship": true,
             "air": true
         },
-        "hasImages": false
+        "hasImages": true
     },
     {
         "name": "Northwood Hills",
