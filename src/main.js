@@ -483,7 +483,7 @@ const updateCompareScreenshots = (element, compare = mapsCompareWithDefault) => 
 const initBackgroundImage = () => {
   qs('#page-map').style = `
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), #141e32),
-    url('/maps/${selectedMap}/${selectedMap}-top.png')
+    url('/cs-maps-overview/maps/${selectedMap}/${selectedMap}-top.png')
   `;
 };
 
